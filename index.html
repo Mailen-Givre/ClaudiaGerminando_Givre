@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudia Germinando</title>
+    <link rel="icon" href="multimedia/isologo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="descrption" content="Hoy empezamos a germinar para mejorar nuestra alimentación y, por qué no, nuestra vida.">
+    <meta name="keywords" content="germinar, germinado, germinados, germinación, brotes, semilla, semillas, alimentación, alimentación viva, crudivorismo, alimentación sana, saludable, cereales, legumbres, oleaginosas, pseudocereales, mucilaginosas, hortalizas , recetas, métodos, salud">
+
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="multimedia/logo.png" alt="logo"></a>
+        <div class="menuContenedor">
+            <label class="botonMenu" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <ul class="menu">
+                <li><a href="paginas/historia.html">Historia</a></li>
+                <li><a href="paginas/por_que_germinar.html">¿Por qué germinar?</a></li>
+                <li><a href="paginas/tipos_de_germinados.html">Tipos de germinados</a>
+                    <ul>
+                        <li><a href="paginas/tipos_de_germinados.html#germinadoProp" onclick="toggle_visibility('germinadoProp');">Germinados</a></li>
+                        <li><a href="paginas/tipos_de_germinados.html#brotes" onclick="toggle_visibility('brotes');">Brotes</a></li>
+                        <li><a href="paginas/tipos_de_germinados.html#microverdes" onclick="toggle_visibility('microverdes');">Microverdes</a></li>
+                    </ul>
+                </li>
+                <li><a href="paginas/tipos_de_semillas.html">Tipos de semillas</a>
+                    <ul>
+                        <li><a href="paginas/tipos_de_semillas.html#semCereales">Cereales</a></li>
+                        <li><a href="paginas/tipos_de_semillas.html#semPseudo">Pseudo-cereales</a></li>
+                        <li><a href="paginas/tipos_de_semillas.html#semLegumbres">Legumbres</a></li>
+                        <li><a href="paginas/tipos_de_semillas.html#semOleaginosas">Oleaginosas</a></li>
+                        <li><a href="paginas/tipos_de_semillas.html#semMucilaginosas">Mucilaginosas</a></li>
+                        <li><a href="paginas/tipos_de_semillas.html#semHortalizas">Hortalizas</a></li>
+                    </ul>
+                </li>
+                <li><a href="paginas/metodos.html">Métodos</a>
+                    <ul>
+                        <li>Bolsa de tela</li>
+                        <li>Bandejas apilables</li>
+                        <li>Plato de barro</li>
+                        <li>Bandejas reutilizables</li>
+                        <li>Colador</li>
+                        <li>Frasco de vidrio</li>
+                        <li>Germinar en tierra</li>
+                    </ul>
+                </li>
+                <li><a href="paginas/semillas.html">Semillas</a></li>
+                <li><a href="paginas/recetas.html">Recetas</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="bannerHome"></div>
+        <div class="bannerTexto">
+            <h1 class="blanco">Bienvenido al mundo de la germinación</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quis quia reprehenderit itaque nulla quaerat ipsum
+                quas repudiandae consequatur tempore illum asperiores nesciunt perferendis earum, optio nemo possimus sint voluptas!</p>
+            <button class="boton1">
+                <a href="paginas/por_que_germinar.html">Ver más</a>
+            </button>
+         </div>   
+    </header>
+ 
+    <main class="espacioIndice">
+        <div  class="indice">
+            <div class="fila">
+                <section>
+                    <a href="paginas/historia.html"><img src="./multimedia/index/portadaHistoria.jpg" alt="portada Historia"></a>
+                    <h4>Historia</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus libero dicta laborum officiis laudantium odit neque, 
+                        repellat numquam blanditiis tempore dolores, fuga dignissimos molestias magnam magni facilis? Pariatur, mollitia adipisci.</p>
+                    <button class="boton2">
+                        <a href="paginas/historia.html">Ver más</a>
+                    </button>
+                </section>
+                <section>
+                    <a href="paginas/tipos_de_germinados.html"><img src="./multimedia/index/portadaGerminados.jpg" alt="portada Germinados"></a>
+                    <h4>Tipos de Germinados</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus libero dicta laborum officiis laudantium odit neque, 
+                        repellat numquam blanditiis tempore dolores, fuga dignissimos molestias magnam magni facilis? Pariatur, mollitia adipisci.</p>
+                    <button class="boton2">
+                        <a href="paginas/tipos_de_germinados.html">Ver más</a>
+                    </button>
+                </section>
+                <section>
+                    <a href="paginas/tipos_de_semillas.html"><img src="./multimedia/index/portadaTSemillas.jpg" alt="portada Tipos de Semillas"></a>
+                    <h4>Tipos de Semillas</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus libero dicta laborum officiis laudantium odit neque, 
+                        repellat numquam blanditiis tempore dolores, fuga dignissimos molestias magnam magni facilis? Pariatur, mollitia adipisci.</p>
+                    <button class="boton2">
+                        <a href="paginas/tipos_de_semillas.html">Ver más</a>
+                    </button>
+                </section>
+            </div>
+            <div class="fila">
+                <section>
+                    <a href="paginas/metodos.html"><img src="./multimedia/index/portadaMetodos.jpg" alt="portada Metodos"></a>
+                    <h4>Métodos</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus libero dicta laborum officiis laudantium odit neque, 
+                        repellat numquam blanditiis tempore dolores, fuga dignissimos molestias magnam magni facilis? Pariatur, mollitia adipisci.</p>
+                    <button class="boton2">
+                        <a href="paginas/metodos.html">Ver más</a>
+                    </button>
+                </section>
+                <section>
+                    <a href="paginas/semillas.html"><img src="./multimedia/index/portadaSemillas.jpg" alt="portada Semillas"></a>
+                    <h4>Semillas</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus libero dicta laborum officiis laudantium odit neque, 
+                        repellat numquam blanditiis tempore dolores, fuga dignissimos molestias magnam magni facilis? Pariatur, mollitia adipisci.</p>
+                    <button class="boton2">
+                        <a href="paginas/semillas.html">Ver más</a>
+                    </button>
+                </section>
+                <section>
+                    <a href="paginas/recetas.html"><img src="./multimedia/index/portadaRecetas.jpg" alt="portada Recetas"></a>
+                    <h4>Recetas</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus libero dicta laborum officiis laudantium odit neque, 
+                        repellat numquam blanditiis tempore dolores, fuga dignissimos molestias magnam magni facilis? Pariatur, mollitia adipisci.</p>
+                    <button class="boton2">
+                        <a href="paginas/recetas.html">Ver más</a>
+                    </button>
+                </section>
+            </div>
+            <div class="frase">
+                <div class="fraseColumnas">
+                    <div class="fraseTexto">
+                        <h3>“Pequeños gestos que suavizan mi huella en la Tierra generando salud para mí y para el entorno”</h3>
+                        <h4>Claudia Sterin</h4>
+                    </div>
+                    <img class="estampado" src="./multimedia/index/Estampado.png" alt="Estampado">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <form>
+            <div class="formulario">
+                <img src="./multimedia/footer/avatar.png" alt="avatar">
+                <input type="text" name="nombre"placeholder="Nombre"/>
+            </div>
+            <div class="formulario">
+                <img src="./multimedia/footer/mail.png" alt="mail">
+                <input type="email" name="email" placeholder="Mail"/>
+            </div>
+            <input class="enviar" type="submit" value="Enviar"/>
+        </form>
+        <div class="redesSociales">
+            <img src="./multimedia/footer/youtube.png" alt="youtube">
+            <img src="./multimedia/footer/instagram.png" alt="instagram">
+            <img src="./multimedia/footer/facebook.png" alt="facebook">
+            <img src="./multimedia/footer/pinterest.png" alt="pinterest">
+        </div>
+    </footer>
+    <script type="text/javascript"> /* Extracto sacado de google, no manejo Js aun */
+        function toggle_visibility(id) {
+          var e = document.getElementById(id);
+          if(e.style.display == 'block')
+             e.style.display = 'none';
+          else
+             e.style.display = 'block';
+       }
+</script>
+</body>
+</html>

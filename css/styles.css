@@ -1,0 +1,691 @@
+*{
+    margin: 0 0;
+}
+li{
+    list-style: none;
+}
+body{
+    width: 100vw;
+/*     box-sizing: border-box; */
+}
+
+/*MENU*/
+nav {
+    position: sticky;
+    background-color: white;
+    width:100%;
+    padding: 20px 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+nav img{
+    margin-left: 75px;
+}
+.menuContenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    margin-right: 50px;
+}
+.menu li{
+    position: relative;
+    text-align: center;
+    padding: 0 15px;
+}
+.menu a:hover{
+    color:#67874D
+}
+ul li a {
+    color:black;
+}
+.menu li ul{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    display: none;
+    line-height: 27px;
+    padding: 10px 0;
+}
+.menu li:hover ul{
+    display: block;
+    width: 200px;
+    margin-left: -15px;
+    background-color: white;
+}
+.menu li ul li{
+    display: block;
+    text-align: left;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.botonMenu{
+    margin: 10px 40px 0 0;
+    font-size: 26px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+@media only screen and (max-width: 500px) {
+    .menuContenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .botonMenu {
+        display: block;
+        cursor: pointer;
+        margin: 0;
+        padding-right: 15px;
+    }
+    .menu {
+        text-align: center;
+        display: none;
+        margin: 20px 0 0 0;
+        padding: 0;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #67874D;
+        padding-left: 0;
+        text-align: right;
+        width: 50vw;
+    
+    }
+    #toggle:checked + .menu {
+        display: block;
+        }
+    nav img{
+        width: 40vw;
+        margin: 0;
+        padding-left: 18px;
+    }     
+}
+@media only screen and (min-width: 500px) {
+    .botonMenu {
+        line-height: 15px;
+    }
+}
+
+/*TIPOGRAFIAS*/
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 52px;
+    font-weight: bold;
+    color: #67874D;
+    padding: 40px 0 0 75px;
+}
+h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #E27E10;
+}
+h3{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight:bold;
+    color: #E27E10;    
+}
+h4{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18x;
+    font-weight: bold;
+    color: #FFFF;
+}
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+a{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+}
+li {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+.verde{
+    color: #96BB7C;
+}
+.blanco{
+    color: white;
+    padding: 30px 0 30px 75px;
+}
+/*INDEX*/
+header{
+overflow: hidden;
+width: 100vw;
+}
+
+.bannerHome{
+    background-image: url(../multimedia/index/bannerHome.jpg);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: fixed;
+    height: 600px;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+     
+}
+.bannerHome:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+.bannerTexto{
+    margin-top: 200px;
+    position: absolute;
+}
+.bannerTexto h1{
+    position: relative;
+    width: 600px;
+}
+.bannerTexto p{
+    color: white;
+    position: relative;
+    text-align: left;
+    width: 700px;
+    margin: 50px 0 0 75px;
+}
+.boton1{
+    border: solid 1px white;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    margin: 20px 0 30px 75px;
+    background-color: rgba(255, 255, 255,0.2);
+}
+.boton1 a{
+    position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+    header{
+    overflow: hidden;
+    width: 100vw;
+}
+
+.bannerHome{
+    height: 300px;
+    width: 100%;
+}
+
+.bannerTexto{
+    margin-top: 150px;
+    width: 100%;
+}
+.bannerTexto h1{
+    width: 95vw;
+    margin: 0 10px;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+}
+.bannerTexto p{
+   display: none;
+}
+.boton1{
+    margin: 30px 0 30px 130px;
+}
+     
+}
+
+.espacioIndice{
+    padding-top: 600px;
+    width: 100%;
+}
+.indice{
+    background-color: white;
+    
+}
+.fila{
+    display: flex;
+    justify-content: space-around;
+}
+.indice section{
+    width: 30vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.indice section img{
+    margin-top: 70px;
+    height: 300px;
+    width: auto;
+}
+.indice h4{
+    color: black;
+    padding-top:10px;
+}
+.indice p{
+    width: 100%;
+    padding-top:10px;
+}
+.boton2{
+    background-color: #E27E10;
+    border: none;
+    margin-top: 20PX;
+    padding: 10px 10px;
+}
+.boton2 a{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+    .espacioIndice{
+        padding-top: 300px;
+    }
+    
+    .fila{
+        flex-direction: column;
+    }
+    .indice section{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+}
+
+.frase{
+	background-color: #96BB7C;
+    height: 300px;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.fraseColumnas{
+    display: flex;
+    justify-content:space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.fraseTexto{
+    margin-left: 40px;
+}
+.frase h3{
+    margin-top: 50px;
+    font-weight: normal;
+    color:white;
+    line-height: 40px;
+}
+.frase h4{
+    color:white;
+    margin: 10px 0;
+}
+.frase .boton1{
+    margin-left: 0;
+}
+
+.estampado{
+    height: auto;
+    width: 50%;
+}
+@media only screen and (max-width: 500px) {
+    .frase h3{
+        width: 80vw;
+        size: 18px;
+        margin-top: 30px;
+        line-height: 30px;
+    }
+    .estampado{
+        display: none;
+    }
+}
+
+/* FOOTER */
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px 0;
+    width: 100%;
+}
+
+form{
+    display: flex;
+}
+footer form img{
+    width: 20px;
+    height: 20px;
+}
+input{
+    border:none;
+}
+.formulario{
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+}
+.enviar{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.redesSociales{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.redesSociales img{
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    form{
+        flex-direction: column;
+    }
+    .formulario{
+        margin-bottom: 15px;
+    }
+   }
+
+/* HISTORIA */
+.historia{
+    background-color: #F1F1F1;
+}
+
+.lineaTemporal{
+    display: grid;
+    margin: 0 75px;
+    padding-bottom: 100px;
+    grid-template-columns: repeat(3);
+    grid-gap: 30px;
+}
+.china{
+    grid-column: 3;
+    grid-row: 1;  
+  }
+  .esnia{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .occidente{
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .eeuu{
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .hunzas{
+    grid-column: 3;
+    grid-row: 5;
+  }
+  .ann{
+    grid-column: 1;
+    grid-row: 6;
+  }
+  .circulos{
+    grid-column: 2;
+    grid-row: 1/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 300px 0;
+  }
+  .circulos img{
+    width: 35px;
+    height: 35px;
+}
+.linea{
+    border-left: 3px solid #67874D;
+    grid-column: 2;
+    grid-row: 1/7;
+    margin: 317.5px 0 317.5px 17.5px;
+}
+.imgTemporal{
+    width: 40vw; 
+}
+.lineaTemporal p{
+    width: 40vw;
+    padding-top: 10px;
+}
+@media only screen and (max-width: 500px) {
+    h1{
+        padding-left: 18px;
+    }
+    .lineaTemporal{
+        grid-template-columns: repeat(2);
+        grid-gap: 10px;
+        margin: 0 18px;
+    }
+    .china{
+        grid-column: 2;
+        grid-row: 1;  
+      }
+      .esnia{
+        grid-column: 2;
+        grid-row: 2;
+         }
+      .occidente{
+        grid-column: 2;
+        grid-row: 3;
+      }
+      .eeuu{
+        grid-column: 2;
+        grid-row: 4;
+      }
+      .hunzas{
+        grid-column: 2;
+        grid-row: 5;
+      }
+      .ann{
+        grid-column: 2;
+        grid-row: 6;
+      }
+      .circulos{
+        grid-column: 1;
+        grid-row: 1/7;
+        margin: 140px 0;
+    }
+    .linea{
+        grid-column: 1;
+        grid-row: 1/7;
+        margin: 157.5px 0 157.5px 17.5px;
+     }
+     .lineaTemporal h2{
+        font-size: 20px;
+        margin-top: 20px;
+     }
+     .imgTemporal{
+        width: 80vw; 
+    }
+    .lineaTemporal p{
+        width: 80vw;
+    }
+} 
+/* POR QUE GERMINAR */
+.porque{
+    display: flex;
+    margin-left: 75px;
+    justify-content: space-between;
+    width: 90vw;
+}
+.porque li{
+    width: 40vw;
+    line-height: 30px;
+    list-style: circle;
+}
+.porque h3{
+    padding: 100px 0 15px;
+}
+.porque img{
+    margin-top: 30px;
+    width: 40vw;
+}
+.hamburguesa{
+    padding-top: 250px;
+}
+@media only screen and (max-width: 500px) {
+    .porque{
+    flex-direction: column;
+    margin-left: 18px;
+    }
+    .porque li{
+        width: 80vw;
+    }
+    .porque h3{
+        padding-top: 50px;
+    }
+    .porque img{
+        width: 80vw;
+        margin-left: 18px;
+    }
+    .hamburguesa{
+        padding-top: 0;
+    }
+    .pcolumna2{
+        margin-left: 0;
+    }
+
+}
+
+/* TIPOS DE GERMINADOS*/
+.imgTiposG{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 300px;
+    width: 90vw;
+}
+.imgTiposG li{
+    position: relative;
+    margin-left: 10px;
+}
+.contenedorTextoTipos{
+    position: absolute;
+    display: none;
+    background-color: #F1F1F1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.imgTiposG li:hover{
+    background-color:rgba(150, 187, 124, 1)
+}
+.imgTiposG li:hover ul{
+    display:block;
+}
+.contenedorTextoTipos li{
+    display: block;
+}
+.imgTiposG h3{
+    margin-bottom: 20px;
+}
+/* #germinadoProp{
+    position: relative;
+    display: block;
+} */
+@media only screen and (max-width: 500px) {
+    .imgTiposG{
+        flex-direction: column;
+        overflow: hidden;
+        width: 80vw;
+        margin-bottom: 0;
+    }
+    .contenedorTextoTipos{
+        display: block;
+        position: relative;
+        width: 80vw;
+        background-color: #F1F1F1;
+        border-top:solid 5px #96BB7C;
+        margin-bottom: 50px;
+    }
+
+    .contenedorTextoTipos h3{
+        margin-top: 10px;
+    }
+
+}
+
+/* TIPOS DE SEMILLAS */
+.espacio{ /* Este espacio se genera para que no quede el ID tapado por el Menu */
+    height: 100px;;
+}
+.tipoSemillas{
+    margin: 0 75px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.tipoSemillas p{
+    padding: 50px 75px 100px 75px;
+    line-height: 30px;
+    background-color: #F1F1F1;
+
+}
+.semCereales{
+    background-image: url(../multimedia/tiposdeSemillas/cereales.jpg);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.semPseudo{
+    background-image: url(../multimedia/tiposdeSemillas/psudocereales.jpg);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.semLegumbres{
+    background-image: url(../multimedia/tiposdeSemillas/legumbres.jpg);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.semOleaginosas{
+    background-image: url(../multimedia/tiposdeSemillas/oleaginosas.jpg);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.semMucilaginosas{
+    background-image: url(../multimedia/tiposdeSemillas/mucilaginosas.jpg);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.semHortalizas{
+    background-image: url(../multimedia/tiposdeSemillas/hortalizas.jpeg);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin-top: 50px;
+}
+@media only screen and (max-width: 500px) {
+    .tipoSemillas p{
+        padding: 50px 18px;
+    }
+    .tipoSemillas{
+        margin: 0 0;
+    }
+}

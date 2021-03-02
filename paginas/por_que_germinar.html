@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Por qué germinar?</title>
+    <link rel="icon" href="../multimedia/isologo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="descrption" content="Las ventajas de los germinados. Razones para incluirlos en nuestras comidas.">
+    <meta name="keywords" content="germinar, germinado, germinados, germinación, vida, nutritivo, nutricional, nutrientes, semilla, brotes, alimentación, ecológico, ecología, económico, económica, semillas, rendimiento">
+</head>
+<body>
+    <nav>
+        <a href="../index.html"><img src="../multimedia/logo.png" alt="logo"></a>
+        <div class="menuContenedor">
+            <label class="botonMenu" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <ul class="menu">
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="por_que_germinar.html">¿Por qué germinar?</a></li>
+                <li><a href="tipos_de_germinados.html">Tipos de germinados</a>
+                    <ul>
+                        <li><a href="tipos_de_germinados.html#germinadoProp" onclick="toggle_visibility('germinadoProp');">Germinados</a></li>
+                        <li><a href="tipos_de_germinados.html#brotes" onclick="toggle_visibility('brotes');">Brotes</a></li>
+                        <li><a href="tipos_de_germinados.html#microverdes" onclick="toggle_visibility('microverdes');">Microverdes</a></li>
+                    </ul>
+                </li>
+                <li><a href="tipos_de_semillas.html">Tipos de semillas</a>
+                    <ul>
+                        <li><a href="tipos_de_semillas.html#semCereales">Cereales</a></li>
+                        <li><a href="tipos_de_semillas.html#semPseudo">Pseudo-cereales</a></li>
+                        <li><a href="tipos_de_semillas.html#semLegumbres">Legumbres</a></li>
+                        <li><a href="tipos_de_semillas.html#semOleaginosas">Oleaginosas</a></li>
+                        <li><a href="tipos_de_semillas.html#semMucilaginosas">Mucilaginosas</a></li>
+                        <li><a href="tipos_de_semillas.html#semHortalizas">Hortalizas</a></li>
+                    </ul>
+                </li>
+                <li><a href="metodos.html">Métodos</a>
+                    <ul>
+                        <li>Bolsa de tela</li>
+                        <li>Bandejas apilables</li>
+                        <li>Plato de barro</li>
+                        <li>Bandejas reutilizables</li>
+                        <li>Colador</li>
+                        <li>Frasco de vidrio</li>
+                        <li>Germinar en tierra</li>
+                    </ul>
+                </li>
+                <li><a href="semillas.html">Semillas</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1>¿Por qué germinar?</h1>
+        <div class="porque">
+            <div>
+                <img src="../multimedia/porQueGerminar/brotes.jpg" alt="brotes">
+                <h3 class="verde">Ecológico</h3>
+                <ul>
+                    <li>Los germinados no producen desechos y además, como los producimos nosotros, reducimos 
+                        la necesidad de transporte e intermediarios para poder alimentarnos: son alimentos que 
+                        contribuyen a la ecología del planeta.</li>
+                </ul>
+                <h3>Económico</h3>
+                <ul>
+                    <li>Es una manera económica de comer ya que sólo necesitamos semillas, agua y algún recipiente
+                         que puede ser reciclado.</li>
+                    <li>Se puede germinar en ambientes pequeños y el rendimiento es muy grande.</li>
+                    <li>Podemos disponer de germinados y brotes durante todo el año.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Valioso</h3>
+                <ul>
+                    <li>La germinación nos pone en contacto con la vida.</li>
+                    <li>Es una hermosa actividad para hacer con los niños.</li>
+                    <li>Los germinados son estéticos y podemos con ellos decorar platos.</li>
+                </ul>
+                <h3 class="verde">Nutritivo</h3>
+                <ul>
+                    <li>Desde el punto de vista nutricional nos aporta diez veces más de los
+                        nutrientes que tiene la planta en estado adulto.</li>
+                    <li>Hace más digerible y asimilable la semilla.</li>
+                    <li>Los germinados y brotes contribuyen a una alimentación variada.</li>
+                    <li>Algunos germinados van bien con comidas saladas y otros con comidas dulces.</li>
+                    <li>Los germinados se pueden incorporar a batidos y licuados.</li>
+                </ul>
+                <img class="hamburguesa" src="../multimedia/porQueGerminar/hamburguesa.jpg" alt="hamburguesa">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <form>
+            <div class="formulario">
+                <img src="../multimedia/footer/avatar.png" alt="avatar">
+                <input type="text" name="nombre"placeholder="Nombre"/>
+            </div>
+            <div class="formulario">
+                <img src="../multimedia/footer/mail.png" alt="mail">
+                <input type="email" name="email" placeholder="Mail"/>
+            </div>
+            <input class="enviar" type="submit" value="Enviar"/>
+        </form>
+        <div class="redesSociales">
+            <img src="../multimedia/footer/youtube.png" alt="youtube">
+            <img src="../multimedia/footer/instagram.png" alt="instagram">
+            <img src="../multimedia/footer/facebook.png" alt="facebook">
+            <img src="../multimedia/footer/pinterest.png" alt="pinterest">
+        </div>
+    </footer>
+    <script type="text/javascript"> /* Extracto sacado de google, no manejo Js aun */
+        function toggle_visibility(id) {
+          var e = document.getElementById(id);
+          if(e.style.display == 'block')
+             e.style.display = 'none';
+          else
+             e.style.display = 'block';
+       }
+</script>
+</body>
+</html>
